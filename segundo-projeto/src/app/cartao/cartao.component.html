@@ -1,0 +1,11 @@
+<div class="cartao" [style]="gerarCssDoCartao()">
+
+    <h4>{{ tituloCartao }}</h4>
+
+    <img [src]= "imagemDoCartao" alt="flor amarela">
+
+    <p>{{ textoCartao }}</p>
+
+   <button (click)="emitirDelecaoDoCartao()">&times;</button>
+    
+</div>

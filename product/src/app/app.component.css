@@ -1,0 +1,33 @@
+.cartao{
+    padding-top: 10vh;
+    padding-left: 10vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+  }
+  
+  .sidenav-content {
+    display: flex;
+    background-color: rgb(197, 163, 211);
+    padding: 10px;
+  }
+
+  .botao-menu{
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .sidenav {
+    padding: 10px;
+    background-color: rgb(197, 163, 211);
+  }
+
+  .botao-add{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+ 

@@ -1,0 +1,74 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>FormsModule</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Seus Dados</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form action="" #formUsuario="ngForm" (ngSubmit)="salvarUsuario()">
+        <mat-form-field appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input type="text" matInput [(ngModel)]="user.nome" name="campo-nome" required>
+          <mat-error>
+            <span>Campo de Nome invalido</span>
+          </mat-error>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input type="text" matInput [(ngModel)]="user.username" name="campo-username" required>
+          <mat-error>
+            <span>Campo de Username invalido</span>
+          </mat-error>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [(ngModel)]="user.email" name="campo-email" required email #InputNome="ngModel">
+          <mat-error>
+            <span>Campo de Email invalido</span>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Senha</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="user.senha" name="campo-senha" required minlength="8" #inputSenha="ngModel">
+          <mat-error>
+            <span *ngIf="inputSenha.errors?.['required']">Campo de Senha invalido</span>
+            <span *ngIf="inputSenha.errors?.['minlength']">A senha precisa ter no minimo 8 caracteres</span>
+          </mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}} </mat-icon>
+          </button>
+        </mat-form-field>
+
+        
+        <mat-radio-group color="primary" [(ngModel)]="user.genero" name="campo-genero" required>
+          <p>Selecione seu gênero:</p>
+          <mat-radio-button value="masculino">Masculino</mat-radio-button>
+          <mat-radio-button value="feminino">Feminino</mat-radio-button>
+          <mat-radio-button value="outro">Outro</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <section>
+        <mat-checkbox color="primary" [(ngModel)]="user.aceitaTermosDeCondicao" name="campo-termos" required>
+          Aceita nossos <a href="#">termos e condições</a>*
+        </mat-checkbox>
+        </section>
+        <br>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+        <br>
+        <button (click)="registrar()" type="submit" mat-raised-button color="primary" [disabled]="formUsuario.invalid">Registrar</button>
+        <br>
+        <button type="reset" mat-raised-button color="warn">Resetar</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<app-reactive-forms></app-reactive-forms>

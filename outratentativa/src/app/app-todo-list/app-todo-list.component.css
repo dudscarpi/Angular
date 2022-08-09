@@ -1,0 +1,28 @@
+div{
+    display: flex;
+    justify-content: center;
+
+  }
+  dl{
+    color: white;
+    max-width: min-content;
+    cursor: pointer;
+    display: flexbox;/*  display flex */
+    float: right;
+    right: 15px;
+    padding: 15px;
+  }
+  
+  
+  td{
+    text-align: left;
+    background-color: #474C68;
+    color: white;
+    border: 5px solid #2B2B43;
+    border-radius: 20px;
+    width: 50vw;
+    max-height: 15px;
+    height: 7px;
+    padding-left: 15px;
+    padding-top: 15px ;  /*mexer aqui para margem superior espaço do texto*/
+  }

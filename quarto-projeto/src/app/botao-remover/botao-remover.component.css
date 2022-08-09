@@ -1,0 +1,40 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.x{
+color: #474C68;
+max-width: min-content;
+cursor: pointer;
+text-align: right;
+float: right;
+padding-right: .9vw;
+}
+
+:hover .x {
+  color: white;
+  max-width: min-content;
+  cursor: pointer;
+  text-align: right;
+  float: right;
+  padding-right: .9vw;
+  
+}
+
+dl {
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+}
+
+td {
+  background-color: #474C68;
+  width: 50vw;
+  height: 5vw;
+  text-align: left;
+  padding-left: .9vw;
+  border: 1vw solid #2B2B43;
+  border-radius: 2vw;
+
+}

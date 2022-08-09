@@ -1,0 +1,26 @@
+<mat-drawer-container class="container" autosize>
+
+  <div class="sidenav-content">
+    <button class="botao-menu" mat-mini-fab color="primary" type="button" mat-raised-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    
+  </div>
+
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <button color="primary" (click)="showFiller = !showFiller" mat-raised-button>
+      Produtos
+    </button>
+  </mat-drawer>
+
+
+  <div class="cartao">
+    <app-card></app-card>
+  </div>
+
+  <button class="botao-add" mat-mini-fab color="accent" (click)="openForm()">
+    <mat-icon>add</mat-icon>
+  </button>
+
+</mat-drawer-container>

@@ -1,0 +1,33 @@
+<h1>My Tasks
+  <img heigth="30" width="40" src="https://icongr.am/clarity/clipboard.svg?size=128&color=ffffff"/>
+</h1>
+
+<app-to-do-controls (addTarefa)="adicionar($event)"></app-to-do-controls>
+
+<app-app-todo-list *ngFor="let item of items" [texto]="item.mensagem" 
+(deletarTarefa)="deletar(item.id)"></app-app-todo-list>
+
+
+
+
+
+<!-- 
+  <input type="text" #nomeInput placeholder="Add a task" maxlength="100">
+  
+  <button (click)="add(nomeInput.value)">Adicionar</button>
+  <br>
+  
+  
+  <div>  
+  <tr *ngFor="let texto of textos">
+      <td>
+        {{texto}}
+  
+      <dl (click)="deletar()">
+          &times;
+      </dl>
+      </td>
+    </tr>
+  
+    
+  </div> -->

@@ -1,0 +1,27 @@
+/*
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+background-color: #303030; }
+
+.container {
+    padding-top: 15vh;
+    height: calc(110vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+  a{
+    color:aqua
+  } */

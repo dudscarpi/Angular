@@ -1,0 +1,11 @@
+.sucesso{
+    color: rgb(21, 122, 43);
+}
+
+.aviso{
+    color: rgb(156, 156, 30) ;
+}
+
+.perigo{
+    color: rgb(233, 54, 54);
+}

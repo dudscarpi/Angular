@@ -1,0 +1,19 @@
+mat-card {
+    width: 45vh;
+    height: auto;
+    margin: 15px;
+  }
+
+mat-card-footer{
+  text-align: center;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  background-color: #E91E63;
+}
+
+button{
+  width: 200px;
+}

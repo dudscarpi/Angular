@@ -1,0 +1,216 @@
+<!-- <mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ title | uppercase }}</mat-card-title>
+    <mat-card-subtitle> {{ subtitle | lowercase }} </mat-card-subtitle>
+    </mat-card-header>
+  <img src="https://villacafe.com.br/blog/wp-content/uploads/2017/11/136690-estender-1000-palavras-qual-e-a-diferenca-entre-o-cafe-gourmet-e-o-cafe-tradicional-760x460.jpg" alt="grao de cafe"
+    mat-card-image>
+
+    <mat-card-content>
+       <div>
+      {{ pessoa | json }}
+      </div> 
+
+      <p>
+        Item postado no dia {{ date | date:'dd/MMM, yyyy hh:mm' }}
+      </p>
+    </mat-card-content>
+    
+    
+    <mat-card-footer>
+      <p>
+        <strong> {{ 10 | currency: 'BRL' }} </strong>
+      </p>
+
+      inserir um botao aqui
+
+    </mat-card-footer>
+</mat-card> -->
+
+
+<div>
+
+<!-- primeiro card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha1 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/157373-1000-1000/Energetico-TNT-Pink-Lemonade-473ml-7898377662241_1.png?v=637883296557630000"
+    alt="tnt energetico pink lemonade zero"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto1 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 7.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+<!-- segundo card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title > {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha1 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156918-1500-1500/Energetico-TNT-Focus-473ml-7897395000363_1.png?v=637732683880470000"
+    alt="tnt energetico colina zero"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto2 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 7.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+</div>
+
+<!-- terceiro card -->
+
+<div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha3 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156920-1000-1000/Energetico-TNT-Original-269ml-7897395031602_1.png?v=637732687102000000"
+    alt="tnt energetico original"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto3 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 6.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+<!-- quarto card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha3 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156930-1000-1000/Energetico-TNT-Zero-Acucar-269ml-7897395031657_1.png?v=637732716467430000"
+    alt="tnt energetico original zero"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto4 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 6.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+</div>
+
+<!-- quinto card -->
+
+<div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha2 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156922-1000-1000/Energetico-TNT-Maca-Verde-269ml-7897395033002_1.png?v=637732690547700000"
+    alt="tnt energetico maça verde sabores"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto5 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 6.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+<!-- sexto card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha2 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156928-1000-1000/Energetico-TNT-Acai-com-Guarana-269ml-7897395099565_1.png?v=637732712531200000"
+    alt="tnt energetico açai sabores"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto6 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 6.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+
+
+<!-- setimo card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ tituloProduto }}</mat-card-title>
+    <mat-card-subtitle> {{ linha2 }} </mat-card-subtitle>
+    </mat-card-header>
+    <img src="https://bomdebeer.vteximg.com.br/arquivos/ids/156924-1000-1000/Energetico-TNT-Tangerina-269ml-7897395033057_1.png?v=637732711208900000"
+    alt="tnt energetico tangerina sabores"
+    mat-card-image>
+    <mat-card-content>
+      <mat-card-subtitle> {{ nomeProduto7 }} </mat-card-subtitle>
+        <i>
+        Item lancado em {{ date | date:'MMM yyyy' }}
+      </i>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>
+      {{ 6.99 | currency: 'BRL' }}
+      </p>
+      <button mat-raised-button color="primary"> {{ botaoComprar }} </button>
+      <br><br>
+    </mat-card-footer>
+</mat-card>
+
+
+</div>

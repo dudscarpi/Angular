@@ -1,0 +1,19 @@
+<h2>Ng For</h2>
+
+<table border="1">
+  <tr>
+    <th>Nomes</th>
+  </tr>
+
+  <ng-container *ngFor="let nome of nomes">
+
+
+  <tr *ngIf="nome.length > 6"> <!-- componente para filtragem de elementos dentro da string -->
+    <td>{{ nome }}</td>
+  </tr>
+
+</ng-container>
+</table>
+
+<input type="text" #nomeInput>
+<button (click)="add(nomeInput.value)">Adicionar</button>

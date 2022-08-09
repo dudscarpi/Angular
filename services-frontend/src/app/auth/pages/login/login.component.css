@@ -1,0 +1,39 @@
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 500px;
+}
+
+.image-container {
+  background-image: url(/assets/rocket.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+.form-container {
+  border-left: 5px solid #7B1FA2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form re-captcha {
+  margin-bottom: 20px;
+  align-self: center;
+}

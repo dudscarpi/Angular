@@ -1,0 +1,8 @@
+.container{
+    width: 30vh;
+    background-color: rgb(197, 163, 211);
+}
+.botaoComprar{
+    display: flex;
+    justify-content: center;
+}

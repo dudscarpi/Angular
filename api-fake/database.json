@@ -1,0 +1,76 @@
+{
+  "funcionarios": [
+    {
+      "nome": "Amanda",
+      "email": "amanda@gmail.com",
+      "id": 1
+    },
+    {
+      "nome": "Fernanda",
+      "email": "fernanda@gmail.com",
+      "id": 2
+    },
+    {
+      "nome": "Joaquim",
+      "email": "joca@gmail.com",
+      "id": 3
+    },
+    {
+      "nome": "Mariane",
+      "email": "mariane@gmail.com",
+      "id": 4
+    },
+    {
+      "nome": "Mariana",
+      "email": "mari@gmail.com",
+      "id": 5
+    },
+    {
+      "nome": "Camilla",
+      "email": "cami@gmail.com",
+      "id": 6
+    },
+    {
+      "nome": "Fabiana",
+      "email": "fabi@gmail.com",
+      "id": 7
+    },
+    {
+      "nome": "Nilson",
+      "email": "nilson@gmail.com",
+      "id": 8
+    },
+    {
+      "nome": "Ana Clara",
+      "email": "clara@gmail.com",
+      "id": 9
+    },
+    {
+      "nome": "Adriana",
+      "email": "dri@gmail.com",
+      "id": 11
+    },
+    {
+      "nome": "Andreia",
+      "email": "deia@gmail.com",
+      "id": 12
+    },
+    {
+      "nome": "Heitor",
+      "email": "heitor@gmail.com",
+      "id": 13
+    },
+    {
+      "nome": "Rose",
+      "email": "rose@gmail.com",
+      "foto": "",
+      "id": 16
+    },
+    {
+      "nome": "ultimatentativadessacoisa",
+      "email": "carai@gmail.com",
+      "foto": "https://firebasestorage.googleapis.com/v0/b/soulcodefuncionarios.appspot.com/o/1656607144691?alt=media&token=5ad0b369-51d3-46ea-8942-40b55f099521",
+      "id": 23
+    }
+  ]
+}

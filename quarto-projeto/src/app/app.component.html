@@ -1,0 +1,9 @@
+<h1>My Tasks
+  <img height="30" width="40" src="https://icongr.am/clarity/clipboard.svg?size=128&color=ffffff"/>
+</h1>
+
+<app-botao-adicionar (addTarefa)="adicionar($event)"></app-botao-adicionar>
+
+<app-botao-remover *ngFor="let item of items" [texto]="item.mensagem" 
+(deletarTarefa)="deletar(item.id)"></app-botao-remover>
+

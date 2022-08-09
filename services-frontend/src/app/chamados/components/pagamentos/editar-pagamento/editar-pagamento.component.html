@@ -1,0 +1,35 @@
+<div class="container-edit">
+  <h2 mat-dialog-title>Alterar Pagamento</h2>
+  </div>
+
+
+  <section mat-dialog-content>
+  <form action="" [formGroup]="formPagamentos" (ngSubmit)="inserirPagamento()">
+
+       <ng-container matColumnDef="pagamento">
+        <th mat-header-cell *matHeaderCellDef>Pagamento</th>
+
+        <td mat-cell *matCellDef="let chamado">
+
+          <div *ngIf="chamado.pagamento!=null;else pagamentoNE">
+            {{chamado.pagamento?.status}}
+            <button (click)="editarPagamento(chamado.pagamento)" mat-icon-button matTooltip="Alterar Pagamento">
+
+              <mat-icon>credit_card</mat-icon>
+            </button>
+          </div>
+
+          <ng-template #pagamentoNE>
+            <button (click)="abrirFormPagamento(chamado.idChamado)" mat-icon-button matTooltip="Inserir Pagamento">
+
+              <mat-icon>library_add</mat-icon>
+
+            </button>
+          </ng-template>
+        </td>
+      </ng-container>
+
+    <button type="submit" mat-raised-button color="accent" id="salvar">Salvar
+      alterações</button>
+  </form>
+</section>

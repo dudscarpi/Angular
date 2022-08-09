@@ -1,0 +1,11 @@
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title>{{ productName }}</mat-card-title>
+      <mat-card-subtitle>{{ productPrice | currency }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://m.media-amazon.com/images/I/4170UN4BcNL._AC_.jpg" alt="Photo of a Shiba Inu">
+
+    <mat-card-actions class="botaoComprar">
+      <button color="primary" mat-raised-button (click)="buy()">COMPRAR</button>
+    </mat-card-actions>
+  </mat-card>
